@@ -24,8 +24,11 @@ public class Main {
         System.out.println("The resultat from a is : " + a);
         int b = (55 + 9) % 9;
         System.out.println("The resultat from b is : " + b);
-        int c = 20 + ((-3 * 5) / 8);
-        System.out.println("The resultat from c is : "+ c);
+        float c = (-3 * 5) / 8f;
+        double cfinal = c + 20;
+
+
+        System.out.println("The resultat from cfinal  is : "+ cfinal);
         int d = (5 + ((15 / 3) * 2)) - (8 % 3);
         System.out.println("The resultat from d is " + d);
     }
