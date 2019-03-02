@@ -285,5 +285,71 @@ public class OperatiLogice {
 
     }
 
+public void countToHundread(int number){
+
+    System.out.println("Introdu un numar: " );
+
+    for (int i = number; i <= 100;i++){
+        System.out.println(i);
+    }
+}
+
+public void countBetweenTwoNumbers(int first, int second){
+
+    System.out.println("INtrodu primul numar:");
+
+    System.out.println("INtrodu al doilea numar: ");
+
+
+    for(int i = first;i >= second;i--){
+        System.out.println(i);
+}
 
 }
+public void printStar(){
+    for(int PatternB = 0; PatternB <=7; PatternB++) { // outer loop Pattern B
+        for(int PatternBI = 6; PatternBI >= PatternB; PatternBI--) { //Inner Loop
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
+
+//exercitiul 1
+public  void equalOrLowerThen(int number ){
+    int number2 = 100;
+    if(number <= number2){
+        System.out.println(number);
+
+    }        }
+
+
+
+//exercitiul 7
+public  void CozaLozaWoza(){
+    int count = 0;
+    for(int i  = 0;i <= 110;i++){
+        if(i % 3 == 0){
+            System.out.print(" Coza");
+        }else if(i % 5 == 0){
+            System.out.print(" loza");
+        }else if(i % 7 == 0){
+            System.out.print(" Woza");
+        }else if( i % 3 == 0 && i % 5 ==0){
+            System.out.print(" Coza loza");
+        }else if(i % 5 == 0 && i % 7 == 0){
+            System.out.print(" loza Woza");
+        }
+        else{
+            System.out.print(" " + i);
+        }
+        count++;
+        if(i % 11 == 0){
+            System.out.println(" ");
+        }
+    }
+
+
+}
+}
+

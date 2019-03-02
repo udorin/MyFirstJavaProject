@@ -17,14 +17,13 @@ public class Calculator {
 
            }
            //Primul exercitiu
-    public  int adunareDouaNumere() {
-        System.out.println("Primul Exercitiu \n  Adunarea a doua numere din input");
-        Scanner scan = new Scanner(System.in);
+    public  int adunareDouaNumere(int first, int second) {
 
-        System.out.println("Introdu primul numar: ");
-        int first1 = scan.nextInt();
-        System.out.println("Introdu al doilea numar");
-        int second = scan.nextInt();
+
+
+        int first1 = first;
+
+        int second1 = second;
         int rezAdunare = first1 + second;
         System.out.println("rezultatul adunari este: ");
         return rezAdunare;
@@ -33,15 +32,15 @@ public class Calculator {
     }
 
     //Exercitiul 3
-    public  double averageThreeNumbers() {
+    public  double averageThreeNumbers(int f1, int f2, int f3) {
         System.out.println("Exercitul 3");
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Introdu primul numar: ");
-        int f1 = scan.nextInt();
-        System.out.println("Introdu al doilea numar");
-        int f2 = scan.nextInt();
-        System.out.println("Introdu al treilea numar");
-        int f3 = scan.nextInt();
+
+
+        int f11 = f1;
+
+        int f22 = f2;
+        System.out.println("Media este: ");
+        int f33 = f3;
         int suma = f1 + f2 + f3;
         float average1 = suma / 3f;
         return average1;
@@ -152,6 +151,110 @@ public class Calculator {
         int number1 = scan.nextInt();
         float division = number % number1;
         System.out.println("resultatul impartiri este: " + division);
+
+
+
+
+    }
+    //exercitiul 4
+    public  void sumAndAverage() {
+        int sum = 0;
+        for (int i = 0; i <= 100; i++) {
+            sum += i;
+        }
+        System.out.println("the sum is : " + sum );
+        System.out.println("the average is " + sum/50);
+    }
+
+
+
+    public void sumOddNumbers(){
+        int muxNumber, sum , counter;
+        counter = 0;
+        muxNumber = 100;
+        sum = 0;
+        while(counter <= muxNumber){
+
+            if(counter % 2 != 0 ){
+                sum += counter;
+
+            }counter++;
+
+        }
+        System.out.println(sum);
+        System.out.println("Average is : " + sum / 50);
+
+
+    }
+    //exercitiul 1
+    public   void sumAndAverage1() {
+        int sum = 0;
+        int i = 0;
+        while(i <= 100){
+            sum += i;
+            i++;
+        }
+        System.out.println(sum);
+        System.out.println("average : " + sum / 100);
+
+    }
+    //exercitiul 2
+    public  void sumAndAverage2(){
+        int i = 0;
+        int sum = 0;
+        do{
+            sum += i;
+            i++;
+
+        }while(i <= 100);
+        System.out.println(sum);
+        System.out.println("Average: " + sum / 100);
+    }
+    //exercitiul 4
+    public  void sumAndAverage3(){
+        int count = 1;
+
+        int sum = 0;
+        for(int i = 111; i <= 8899; i ++){
+            sum += i;
+            count++;
+        }
+        System.out.println(sum);
+        System.out.println("Count : " + count);
+        System.out.println(sum);
+
+        System.out.println("Average : " + sum / count);
+    }
+    //exercitiul 5
+    public  void divisibleWith7(){
+        int count = 1;
+        int sum = 0;
+        for(int i = 1; i <= 100; i++){
+            if(i % 7 == 0){
+                sum += i;
+                count++;
+
+            }
+
+        }
+        System.out.println("sum is " + sum);
+        System.out.println("count is : " + count);
+        System.out.println("average is " + sum /count);
+    }
+    //exercitiul 6
+    public  void fibonacciNumbers(){
+        System.out.println(0);
+        System.out.println(1);
+        int n = 17, first = 0, second = 1;
+
+        for(int i = 0; i <= n;i++){
+            int sum = first + second;
+            first = second;
+            second = sum;
+            System.out.println(second);
+
+        }
+
 
 
 

@@ -1,84 +1,10 @@
-public class MedicalStaff {
-   private  int varsta;
-    private double inaltime;
-   private String culoareOchi;
-   private String culoarePar;
-   private double greutate;
-     private String nume;
-     private String sex;
+public class MedicalStaff extends Human {
 
-     public void setVarsta(int varsta){
-         this.varsta = varsta;
-     }
-     public int getVarsta(){
-         return varsta;
-     }
-
-     public void setInaltime(double inaltime){
-         this.inaltime = inaltime;
-     }
-     public double getInaltime(){
-         return inaltime;
-     }
-
-     public void setCuloareOchi(String culoareOchi){
-         this.culoareOchi = culoareOchi;
-     }
-     public String getCuloareOchi(){
-         return culoareOchi;
-     }
-
-     public void setCuloarePar(String culoarePar){
-         this.culoarePar = culoarePar;
-     }
-     public String getCuloarePar(){
-         return culoarePar;
-     }
-
-     public void setGreutate(double greutate){
-         this.greutate = greutate;
-     }
-     public double getGreutate(){
-         return greutate;
+    public void doctorulConsulta(){
+        System.out.println("doctorul consulta");
     }
-
-    public void setNume(String nume){
-         this.nume = nume;
-    }
-    public String getNume(){
-         return nume;
-    }
-
-    public void setSex(String sex){
-         this.sex = sex;
-    }
-    public String getSex(){
-         return sex;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    public void doarme(){
-        System.out.println("Momentat dorm");
-
-    }
-    public void vindeca(){
-        System.out.println("vindec pe el/ea");
-    }
-    public void consulta(){
-        System.out.println("O sa consult pe ea/el");
-
-    }
-    public void sta(){
-        System.out.println("stau ");
+    public void doctorulVindeca(){
+        System.out.println("doctorul vindeca");
     }
 
 
