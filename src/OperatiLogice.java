@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class OperatiLogice {
     //Homework 3 Java
     //Exercitiul 1
-    public void checkNumbers() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Insert first number");
-        int num1 = scan.nextInt();
-        System.out.println("Insert second number");
-        int num2 = scan.nextInt();
+    public void checkNumbers(int number1, int number2) {
+
+        int num1 = number1;
+
+        int num2 = number2;
         if (num1 < num2) {
             System.out.println("Second number  is the bigger");
         } else {
@@ -31,10 +30,9 @@ public class OperatiLogice {
     }
 
     //exercitiul 3\
-    public void checkGreater() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("INtrodu numarul");
-        int number = scan.nextInt();
+    public void checkGreater(int firstN) {
+
+        int number = firstN;
         if (number >= 2 && number <= 8) {
             System.out.println(number);
         } else {
@@ -43,17 +41,17 @@ public class OperatiLogice {
     }
 
     //exercitiul 4
-    public void checkNumberAndText() {
+    public void checkNumberAndText(String text11, int number11) {
         Scanner scan = new Scanner(System.in);
         String text1 = "FastTrack";
         int number1 = 3;
 
         System.out.println("Introdu textul");
-        String text = scan.next();
+        String text = text11;
 
 
         System.out.println("introdu un numar");
-        int number = scan.nextInt();
+        int number = number11;
 
         if (text1.equals(text) && number <= number1) {
             System.out.println(text + " " + number);
@@ -65,11 +63,11 @@ public class OperatiLogice {
     }
 
     //exericitul 5
-    public void checkNumber() {
-        Scanner scan = new Scanner(System.in);
+    public void checkNumber(int n) {
 
-        System.out.println("Introdu un numar");
-        int number = scan.nextInt();
+
+
+        int number = n;
 
         if (number > 8 || number == 6) {
             System.out.println("The amount of snow this winter was(cm): " + number);
@@ -81,11 +79,11 @@ public class OperatiLogice {
     }
 
     //exercitiul 6
-    public void checkGreaterNumber() {
+    public void checkGreaterNumber(double n) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("introdu un numar");
-        double number = scan.nextDouble();
+        double number = n;
 
         if (number > 3 && number != 4) {
             System.out.println("The number is grater then 3 but not equal to 4");
@@ -98,10 +96,9 @@ public class OperatiLogice {
     }
 
     //exercitiul 7
-    public void checkNumberSwitchMethod() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("introdu un numar");
-        int number = scan.nextInt();
+    public void checkNumberSwitchMethod(int n) {
+
+        int number = n;
 
         switch (number) {
             case 0:
@@ -141,11 +138,9 @@ public class OperatiLogice {
     }
 
     //exercitiul 8
-    public void checkEvenNumber() {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("introdu un numar");
-        int number = scan.nextInt();
+    public void checkEvenNumber(int n) {
+     ;
+        int number = n;
 
         if (number % 2 == 0) {
             System.out.println("the number is even");
@@ -155,10 +150,9 @@ public class OperatiLogice {
     }
 
     //exercitiul 9
-    public void checkEligibleForVote() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Introdu varsta");
-        int age = scan.nextInt();
+    public void checkEligibleForVote(int age1) {
+
+        int age = age1;
 
         if (age >= 18) {
             System.out.println("you are eligible for vote");
@@ -170,10 +164,10 @@ public class OperatiLogice {
     }
 
     //exercitiul 10
-    public void checkGreaterNumer1() {
-        int number = 10;
-        int number1 = 12;
-        int number2 = 7;
+    public void checkGreaterNumer1(int first, int second, int third) {
+        int number = first;
+        int number1 = second;
+        int number2 = third;
         System.out.println("Avem 3 numere date, Verifica care este mai mare ");
         if (number > number1 && number > number2) {
             System.out.println("the first number is the greater " + number);
@@ -187,23 +181,21 @@ public class OperatiLogice {
     }
 
     //exercitiul 11
-    public void readNumber() {
-        Scanner scan = new Scanner(System.in);
+    public void readNumber(int n) {
 
-        System.out.println("introdu un numar");
-        int number = scan.nextInt();
+        int number = n;
         System.out.println(number);
     }
 
     //exercitiul 15
-    public void checkThreeNumbers() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("introdu primul numar :");
-        int first = scan.nextInt();
-        System.out.println("introdu al doilea numar");
-        int second = scan.nextInt();
-        System.out.println("introdu al treilea numar");
-        int third = scan.nextInt();
+    public void checkThreeNumbers(int n1, int n2, int n3) {
+
+
+        int first = n1;
+
+        int second = n2;
+
+        int third = n3;
 
         if (first > second && first > third) {
             System.out.println("Maximul este" + first);
@@ -215,16 +207,15 @@ public class OperatiLogice {
     }
 
     //exercitiul 16
-    public void checkFourNumbers() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("introdu primul numar :");
-        int first = scan.nextInt();
-        System.out.println("introdu al doilea numar");
-        int second = scan.nextInt();
-        System.out.println("introdu al treilea numar");
-        int third = scan.nextInt();
-        System.out.println("Introdu al patrulea numar");
-        int fourth = scan.nextInt();
+    public void checkFourNumbers(int n1, int n2, int n3, int n4) {
+
+        int first = n1;
+
+        int second = n2;
+
+        int third = n3;
+
+        int fourth = n4;
 
         if (first > second && first > third && first > fourth) {
             System.out.println("Maximul este" + first);
@@ -238,16 +229,15 @@ public class OperatiLogice {
     }
 
     //exercitiul 17
-    public void checkFourNumbersMinimAndMaxim() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("introdu primul numar :");
-        int first = scan.nextInt();
-        System.out.println("introdu al doilea numar");
-        int second = scan.nextInt();
-        System.out.println("introdu al treilea numar");
-        int third = scan.nextInt();
-        System.out.println("Introdu al patrulea numar");
-        int fourth = scan.nextInt();
+    public void checkFourNumbersMinimAndMaxim(int n1, int n2, int n3, int n4) {
+
+        int first = n1;
+
+        int second = n2;
+
+        int third = n3;
+
+        int fourth = n4;
 
         if (first > second && first > third && first > fourth) {
             System.out.println("Maximul este" + first);
@@ -296,9 +286,7 @@ public void countToHundread(int number){
 
 public void countBetweenTwoNumbers(int first, int second){
 
-    System.out.println("INtrodu primul numar:");
 
-    System.out.println("INtrodu al doilea numar: ");
 
 
     for(int i = first;i >= second;i--){
@@ -329,16 +317,16 @@ public  void equalOrLowerThen(int number ){
 public  void CozaLozaWoza(){
     int count = 0;
     for(int i  = 0;i <= 110;i++){
-        if(i % 3 == 0){
-            System.out.print(" Coza");
-        }else if(i % 5 == 0){
-            System.out.print(" loza");
+        if(i % 3 == 0 && i % 5 == 0){
+            System.out.print(" Coza Loza");
+        }else if(i % 5 == 0 && i % 7 == 0){
+            System.out.print(" loza woza");
         }else if(i % 7 == 0){
             System.out.print(" Woza");
-        }else if( i % 3 == 0 && i % 5 ==0){
-            System.out.print(" Coza loza");
-        }else if(i % 5 == 0 && i % 7 == 0){
-            System.out.print(" loza Woza");
+        }else if( i % 3 == 0 ){
+            System.out.print(" Coza ");
+        }else if(i % 5 == 0 ){
+            System.out.print(" loza ");
         }
         else{
             System.out.print(" " + i);
