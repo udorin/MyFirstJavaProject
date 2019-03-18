@@ -1,3 +1,5 @@
+package Calculator;
+
 public class Grafic {
     //Exercitiul 4
     public  void printPattern() {

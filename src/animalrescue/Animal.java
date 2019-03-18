@@ -1,3 +1,5 @@
+package animalrescue;
+
 public class Animal {
     private   int varsta;
     private double greutate;

@@ -1,24 +1,54 @@
+package Calculator;
+
 import java.util.Scanner;
 
 public class Calculator {
 
-    public  int scadere(int primulNumar, int alDoileaNumar) {
+             public int scadere(int primulNumar, int alDoileaNumar) {
         int scadere1 = primulNumar - alDoileaNumar;
-       return scadere1;
-   }
-    public  int inmultire(int pN, int aN) {
+        return scadere1;
+    }
+    //polymorph
+             public int scadere(int primulNumar, int alDoileaNumar, int alTreilea) {
+        int scadere1 = primulNumar - alDoileaNumar - alTreilea;
+        return scadere1;
+    }
+
+
+
+             public int inmultire(int pN, int aN) {
         int rezultatInmultire = pN * aN;
         return rezultatInmultire;
     }
-    public  double impartire(double impartire1, double impartire2) {
+
+    //polymorph
+
+            public int inmultire(int pN, int aN, int NN) {
+        int rezultatInmultire = pN * aN * NN;
+        return rezultatInmultire;
+    }
+
+
+
+            public double impartire(double impartire1, double impartire2) {
         double rezultateImpartire = impartire1 / impartire2;
         return rezultateImpartire;
 
 
-           }
-           //Primul exercitiu
-    public  int adunareDouaNumere(int first, int second) {
+    }
 
+    //polymorph
+
+            public double impartire(double impartire1, double impartire2, double impartire3) {
+        double rezultateImpartire = impartire1 / impartire2 / impartire3;
+        return rezultateImpartire;
+
+
+    }
+
+
+    //Primul exercitiu
+             public int adunareDouaNumere(int first, int second) {
 
 
         int first1 = first;
@@ -30,9 +60,23 @@ public class Calculator {
 
 
     }
+    //polymorph
+
+             public int adunareDouaNumere(int first, int second, int third) {
+
+
+
+        int rezAdunare = first + second + third;
+        System.out.println("rezultatul adunari este: ");
+        return rezAdunare;
+
+
+    }
+
+
 
     //Exercitiul 3
-    public  double averageThreeNumbers(int f1, int f2, int f3) {
+            public double averageThreeNumbers(int f1, int f2, int f3) {
         System.out.println("Exercitul 3");
 
 
@@ -46,17 +90,31 @@ public class Calculator {
         return average1;
 
     }
+    //polymorph
+
+            public double averageThreeNumbers(int f1, int f2, int f3, int f4) {
+        System.out.println("Exercitul 3");
+
+
+
+        System.out.println("Media este: ");
+
+        int suma = f1 + f2 + f3 + f4;
+        float average1 = suma / 4f;
+        return average1;
+
+    }
 
     //exercitiul 5
-    public  void printOperati(int first, int second) {
+    public void printOperati(int first, int second) {
         Scanner scan = new Scanner(System.in);
         System.out.println("exercitiul 5: Printeza operatile");
 
-        int  firstNumber = first;
+        int firstNumber = first;
 
         int secondNumber = second;
         int adunare11 = firstNumber + secondNumber;
-        int scadere11 = firstNumber -  secondNumber;
+        int scadere11 = firstNumber - secondNumber;
         int inmultire11 = firstNumber * secondNumber;
         int impartire11 = firstNumber / secondNumber;
         int modulul11 = firstNumber % secondNumber;
@@ -66,8 +124,9 @@ public class Calculator {
         System.out.println("Rezultatul  impartiri este : " + impartire11);
         System.out.println("Restul impartiri este : " + modulul11);
     }
+
     //Exercitiul 6
-    public  void convertFahrenheitToCelsius(int tempFahren) {
+    public void convertFahrenheitToCelsius(int tempFahren) {
 
         System.out.println("exercitiul 6");
 
@@ -76,8 +135,9 @@ public class Calculator {
         float tem2 = (temp1 * 5) / 9f;
         System.out.println("temperatura in grade Celsius este " + tem2);
     }
+
     //Exrecitiul 7
-    public  void convertInchesToMeter(int inches2 ) {
+    public void convertInchesToMeter(int inches2) {
 
         System.out.println("Exercitiul 7: Convert inches to meter ");
 
@@ -88,7 +148,7 @@ public class Calculator {
     }
 
     //Exercitiul 8
-    public  void distance(int metri, int ora1, int minute1, int secunde2) {
+    public void distance(int metri, int ora1, int minute1, int secunde2) {
         System.out.println("exercitiul 8 ");
 
 
@@ -117,9 +177,10 @@ public class Calculator {
         System.out.println(" Viteza in mile pe ora este : " + milesPerHour);
 
     }
+
     //homowork 3
     //exercitiul 12
-    public void squareLift(int n){
+    public void squareLift(int n) {
 
 
         int number = n;
@@ -129,7 +190,7 @@ public class Calculator {
     }
 
     //exercitiul 13
-    public void divisionResult(int firstNumber, int secondNumber){
+    public void divisionResult(int firstNumber, int secondNumber) {
 
 
         int number = firstNumber;
@@ -139,11 +200,10 @@ public class Calculator {
         System.out.println("resultatul impartiri este: " + division);
 
 
-
     }
 
     //exercitiul 14
-    public void divisionResult1(int first, int second){
+    public void divisionResult1(int first, int second) {
 
 
         int number = first;
@@ -153,34 +213,33 @@ public class Calculator {
         System.out.println("resultatul impartiri este: " + division);
 
 
-
-
     }
+
     //exercitiul 4
-    public  void sumAndAverage(int number) {
-        int count  = 0;
+    public void sumAndAverage(int number) {
+        int count = 0;
         int sum = 0;
         for (int i = 1; i <= number; i++) {
             sum += i;
             count++;
         }
-        System.out.println("the sum is : " + sum );
-        System.out.println("the average is " + sum/count);
+        System.out.println("the sum is : " + sum);
+        System.out.println("the average is " + sum / count);
     }
 
 
-
-    public void sumOddNumbers(){
-        int maxNumber, sum , counter;
+    public void sumOddNumbers() {
+        int maxNumber, sum, counter;
         counter = 0;
         maxNumber = 100;
         sum = 0;
-        while(counter <= maxNumber){
+        while (counter <= maxNumber) {
 
-            if(counter % 2 != 0 ){
+            if (counter % 2 != 0) {
                 sum += counter;
 
-            }counter++;
+            }
+            counter++;
 
         }
         System.out.println(sum);
@@ -188,12 +247,13 @@ public class Calculator {
 
 
     }
+
     //exercitiul 1
-    public   void sumAndAverage1(int number) {
+    public void sumAndAverage1(int number) {
         int count = 0;
         int sum = 0;
         int i = 0;
-        while(i <= number){
+        while (i <= number) {
             sum += i;
             i++;
             count++;
@@ -202,26 +262,28 @@ public class Calculator {
         System.out.println("average : " + sum / count);
 
     }
+
     //exercitiul 2
-    public  void sumAndAverage2(int number){
+    public void sumAndAverage2(int number) {
         int count = 0;
         int i = 0;
         int sum = 0;
-        do{
+        do {
             sum += i;
             i++;
             count++;
 
-        }while(i <= number);
+        } while (i <= number);
         System.out.println(sum);
         System.out.println("Average: " + sum / count);
     }
+
     //exercitiul 4
-    public  void sumAndAverage3(int number){
+    public void sumAndAverage3(int number) {
         int count = 1;
 
         int sum = 0;
-        for(int i = 111; i <= number; i ++){
+        for (int i = 111; i <= number; i++) {
             sum += i;
             count++;
         }
@@ -231,12 +293,13 @@ public class Calculator {
 
         System.out.println("Average : " + sum / count);
     }
+
     //exercitiul 5
-    public  void divisibleWith7(int number){
+    public void divisibleWith7(int number) {
         int count = 1;
         int sum = 0;
-        for(int i = 1; i <= number; i++){
-            if(i % 7 == 0){
+        for (int i = 1; i <= number; i++) {
+            if (i % 7 == 0) {
                 sum += i;
                 count++;
 
@@ -245,15 +308,16 @@ public class Calculator {
         }
         System.out.println("sum is " + sum);
         System.out.println("count is : " + count);
-        System.out.println("average is " + sum /count);
+        System.out.println("average is " + sum / count);
     }
+
     //exercitiul 6
-    public  void fibonacciNumbers(){
+    public void fibonacciNumbers() {
         System.out.println(0);
         System.out.println(1);
         int n = 17, first = 0, second = 1;
 
-        for(int i = 0; i <= n;i++){
+        for (int i = 0; i <= n; i++) {
             int sum = first + second;
             first = second;
             second = sum;
@@ -262,19 +326,21 @@ public class Calculator {
         }
 
 
-
-
     }
 
+    public int averageArrays(int[] myArrays) {
+        int sum = 0;
 
 
+        for (int i = 0; i < myArrays.length; i++) {
+
+            sum = sum + myArrays[i];
 
 
+        }
+        System.out.println("The Average of the array is: ");
 
+        return sum / myArrays.length;
 
-
-
-
-
-
+    }
 }

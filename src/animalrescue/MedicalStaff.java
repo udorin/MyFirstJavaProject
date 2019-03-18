@@ -1,3 +1,7 @@
+package animalrescue;
+
+import animalrescue.Human;
+
 public class MedicalStaff extends Human {
 
     public void doctorulConsulta(){

@@ -1,4 +1,8 @@
+package Calculator;
+
+import java.lang.reflect.Array;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class OperatiLogice {
     //Homework 3 Java
@@ -64,7 +68,6 @@ public class OperatiLogice {
 
     //exericitul 5
     public void checkNumber(int n) {
-
 
 
         int number = n;
@@ -139,7 +142,7 @@ public class OperatiLogice {
 
     //exercitiul 8
     public void checkEvenNumber(int n) {
-     ;
+        ;
         int number = n;
 
         if (number % 2 == 0) {
@@ -266,78 +269,308 @@ public class OperatiLogice {
         System.out.println("introdu al doilea numar");
         int second = scan.nextInt();
 
-        if (first > second){
+        if (first > second) {
             System.out.println(second + " " + first);
-        }else{
+        } else {
             System.out.println(first + " " + second);
         }
 
 
     }
 
-public void countToHundread(int number){
+    public void countToHundread(int number) {
 
-    System.out.println("Introdu un numar: " );
+        System.out.println("Introdu un numar: ");
 
-    for (int i = number; i <= 100;i++){
-        System.out.println(i);
+        for (int i = number; i <= 100; i++) {
+            System.out.println(i);
+        }
     }
-}
 
-public void countBetweenTwoNumbers(int first, int second){
-
+    public void countBetweenTwoNumbers(int first, int second) {
 
 
-
-    for(int i = first;i >= second;i--){
-        System.out.println(i);
-}
-
-}
-public void printStar(){
-    for(int PatternB = 0; PatternB <=7; PatternB++) { // outer loop Pattern B
-        for(int PatternBI = 6; PatternBI >= PatternB; PatternBI--) { //Inner Loop
-            System.out.print("*");
+        for (int i = first; i >= second; i--) {
+            System.out.println(i);
         }
-        System.out.println();
+
     }
-}
 
-//exercitiul 1
-public  void equalOrLowerThen(int number ){
-    int number2 = 100;
-    if(number <= number2){
-        System.out.println(number);
-
-    }        }
-
-
-
-//exercitiul 7
-public  void CozaLozaWoza(){
-    int count = 0;
-    for(int i  = 0;i <= 110;i++){
-        if(i % 3 == 0 && i % 5 == 0){
-            System.out.print(" Coza Loza");
-        }else if(i % 5 == 0 && i % 7 == 0){
-            System.out.print(" loza woza");
-        }else if(i % 7 == 0){
-            System.out.print(" Woza");
-        }else if( i % 3 == 0 ){
-            System.out.print(" Coza ");
-        }else if(i % 5 == 0 ){
-            System.out.print(" loza ");
+    public void printStar() {
+        for (int PatternB = 0; PatternB <= 7; PatternB++) { // outer loop Pattern B
+            for (int PatternBI = 6; PatternBI >= PatternB; PatternBI--) { //Inner Loop
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        else{
-            System.out.print(" " + i);
-        }
-        count++;
-        if(i % 11 == 0){
-            System.out.println(" ");
+    }
+
+    //exercitiul 1
+    public void equalOrLowerThen(int number) {
+        int number2 = 100;
+        if (number <= number2) {
+            System.out.println(number);
+
         }
     }
 
 
+    //exercitiul 7
+    public void CozaLozaWoza() {
+        int count = 0;
+        for (int i = 0; i <= 110; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print(" Coza Loza");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.print(" loza woza");
+            } else if (i % 7 == 0) {
+                System.out.print(" Woza");
+            } else if (i % 3 == 0) {
+                System.out.print(" Coza ");
+            } else if (i % 5 == 0) {
+                System.out.print(" loza ");
+            } else {
+                System.out.print(" " + i);
+            }
+            count++;
+            if (i % 11 == 0) {
+                System.out.println(" ");
+            }
+
+
+        }
+
+
+    }
+
+    public int[] myArray() {
+
+
+        int[] myArray = new int[100];
+
+
+        for (int i = 0; i < myArray.length; i++) {
+            myArray[i] = i + 1;
+
+
+        }
+        return  myArray;
+
+
+
 }
+
+public void printLines(){
+        String line = "----------";
+        for (int i = 0 ;i < 10;i++){
+            System.out.println(line);
+        }
+
+
 }
+
+public void printLinesArray(){
+        String[] array = new String[10];
+
+        for (int i = 0;i <10;i++){
+            array[i] = "-";
+
+            }
+            for(int i = 0;i< array.length;i++){
+                System.out.print(array[i]);
+
+                for (int j = 0;j< 10;j++){
+                    System.out.print(array[i]);
+                }
+                System.out.println("");
+            }
+        }
+
+
+        public int[] countToHundreadArray() {
+            int[] a = new int[100];
+
+
+            for (int i = 0; i < 100; ++i) {
+
+
+                a[i] = i +1;
+
+
+            }
+
+
+            return a;
+        }
+
+
+        public void checkValueArray(int number, int[] myArray){
+
+        for (int i = 0;i < myArray.length;i++){
+
+            if(myArray[i] == number){
+                System.out.println("the number was found at position:");
+
+            }else{
+
+            }
+        }
+
+
+        }
+
+        public void checkIndexArray(int[] myArray, int ArrayElement){
+
+        for(int i = 0;i < myArray.length;i++){
+
+           if (myArray[i] == ArrayElement){
+               System.out.println(i);
+           }
+
+
+        }
+
+        }
+
+        public int[] removeElementFromArray(int[] array, int index) {
+            if (array == null || index < 0 || index >= array.length) {
+
+            }
+            int[] newArray = new int[array.length - 1];
+
+            System.arraycopy(array,0,newArray,0,index);
+            System.arraycopy(array, index + 1,
+                    newArray, index,
+                    array.length - index - 1);
+
+        return newArray;
+        }
+
+        public void secondSecondSmallestElement(int[] array){
+            int number;
+            int size = array.length;
+            for (int i = 0;i < size;i++){
+                for (int j = i +1;j < size;j++){
+                    if(array[i] > array[j]){
+                        number = array[i];
+                        array[i] = array[j];
+                        array[j]= number;
+
+
+                    }
+
+                }
+
+            }
+            System.out.println(array[0]);
+
+        }
+
+
+        public int[] iterateArray(int[] arrayToCopy,int[] newArray){
+
+
+
+
+            for(int i = 0;i < arrayToCopy.length;i++){
+                newArray[i]= arrayToCopy[i];
+                System.out.println(newArray[i]);
+            }
+            return newArray;
+
+        }
+
+        public int[] insertElement(int[] array, int element, int number){
+
+
+        for(int i = 0;i < array.length;i++){
+
+            if(i == element){
+                array[i] = number;
+
+            }
+
+
+
+        }
+
+    return array;
+
+        }
+
+        public void findMaxAndMinInArray(int[] array){
+        int max;
+        int min;
+            max = array[0];
+            min = array[0];
+
+            for (int i = 1; i < array.length -1; i = i + 2) {
+                if (i + 1 > array.length - 1) {
+                    if (array[i] > max) max = array[i];
+                    if (array[i] < min) min = array[i];
+                }
+                if (array[i] > array[i + 1]) {
+                    if (array[i] > max) max = array[i];
+                    if (array[i + 1] < min) min = array[i + 1];
+                }
+                if (array[i] < array[i + 1]) {
+                    if (array[i] < min) min = array[i];
+                    if (array[i + 1] > max) max = array[i + 1];
+                }
+            }
+            System.out.println(" Maximum value for the above array = " + max);
+            System.out.println(" Minimum value for the above array = " + min);
+
+        }
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
