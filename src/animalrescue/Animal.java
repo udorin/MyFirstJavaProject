@@ -1,6 +1,6 @@
 package animalrescue;
 
-public class Animal {
+abstract class Animal {
     private   int varsta;
     private double greutate;
     private String rasa;
@@ -55,13 +55,10 @@ public class Animal {
 
 
     //metode
-    public void mananca(){
-        System.out.println("Momentan, mananca ");
-    }
-    public void doarme(){
-        System.out.println("momentan  doarme");
+   abstract void eat();
+   abstract void sleep();
+   abstract void waking();
 
-    }
 
 
 

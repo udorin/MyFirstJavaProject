@@ -4,125 +4,110 @@ import java.util.Scanner;
 
 public class Calculator {
 
-             public int scadere(int primulNumar, int alDoileaNumar) {
-        int scadere1 = primulNumar - alDoileaNumar;
-        return scadere1;
+             public int subtraction(int firstNumber, int secondNumber) {
+
+        return firstNumber - secondNumber;
     }
     //polymorph
-             public int scadere(int primulNumar, int alDoileaNumar, int alTreilea) {
-        int scadere1 = primulNumar - alDoileaNumar - alTreilea;
-        return scadere1;
+    public int subtraction(int firstNumber, int secondNumber,  int thirdNumber) {
+
+        return firstNumber - secondNumber - thirdNumber;
     }
 
 
 
-             public int inmultire(int pN, int aN) {
-        int rezultatInmultire = pN * aN;
-        return rezultatInmultire;
-    }
+             public int multiplication(int firstNumber, int secondNumber) {
 
-    //polymorph
-
-            public int inmultire(int pN, int aN, int NN) {
-        int rezultatInmultire = pN * aN * NN;
-        return rezultatInmultire;
-    }
-
-
-
-            public double impartire(double impartire1, double impartire2) {
-        double rezultateImpartire = impartire1 / impartire2;
-        return rezultateImpartire;
-
-
+        return firstNumber * secondNumber;
     }
 
     //polymorph
 
-            public double impartire(double impartire1, double impartire2, double impartire3) {
-        double rezultateImpartire = impartire1 / impartire2 / impartire3;
-        return rezultateImpartire;
+    public int multiplication(int firstNumber, int secondNumber, int thirdNumber) {
+
+        return firstNumber * secondNumber * thirdNumber;
+    }
+
+
+
+            public double division(double firstNumber, double secondNumber) {
+
+        return firstNumber / secondNumber;
+
+
+    }
+
+    //polymorph
+
+    public double division(double firstNumber, double secondNumber, double thirdNumber) {
+
+        return firstNumber / secondNumber / thirdNumber;
 
 
     }
 
 
     //Primul exercitiu
-             public int adunareDouaNumere(int first, int second) {
+             public int addition(int first, int second) {
 
 
-        int first1 = first;
 
-        int second1 = second;
-        int rezAdunare = first1 + second;
         System.out.println("rezultatul adunari este: ");
-        return rezAdunare;
+        return first + second  ;
 
 
     }
     //polymorph
 
-             public int adunareDouaNumere(int first, int second, int third) {
+    public int addition(int first, int second, int third) {
 
 
 
-        int rezAdunare = first + second + third;
         System.out.println("rezultatul adunari este: ");
-        return rezAdunare;
+        return first + second + third ;
 
 
     }
-
 
 
     //Exercitiul 3
-            public double averageThreeNumbers(int f1, int f2, int f3) {
+            public double averageNumbers(int n1, int n2, int n3) {
         System.out.println("Exercitul 3");
 
 
-        int f11 = f1;
 
-        int f22 = f2;
         System.out.println("Media este: ");
-        int f33 = f3;
-        int suma = f1 + f2 + f3;
-        float average1 = suma / 3f;
-        return average1;
 
+        return (n1 + n2 + n3)/3;
     }
     //polymorph
 
-            public double averageThreeNumbers(int f1, int f2, int f3, int f4) {
+    public double averageNumbers(int n1, int n2, int n3, int n4) {
         System.out.println("Exercitul 3");
 
 
 
         System.out.println("Media este: ");
 
-        int suma = f1 + f2 + f3 + f4;
-        float average1 = suma / 4f;
-        return average1;
-
+        return (n1 + n2 + n3 + n4)/4;
     }
 
     //exercitiul 5
-    public void printOperati(int first, int second) {
+    public void printOperation(int first, int second) {
         Scanner scan = new Scanner(System.in);
         System.out.println("exercitiul 5: Printeza operatile");
 
-        int firstNumber = first;
 
-        int secondNumber = second;
-        int adunare11 = firstNumber + secondNumber;
-        int scadere11 = firstNumber - secondNumber;
-        int inmultire11 = firstNumber * secondNumber;
-        int impartire11 = firstNumber / secondNumber;
-        int modulul11 = firstNumber % secondNumber;
-        System.out.println("Rezultatul adunari este :  " + adunare11);
-        System.out.println("Rezultatul scaderi este :  " + scadere11);
-        System.out.println("Rezultatul inmultiri este:  " + inmultire11);
-        System.out.println("Rezultatul  impartiri este : " + impartire11);
-        System.out.println("Restul impartiri este : " + modulul11);
+        int adittion = first + second ;
+        int subtraction = first - second  ;
+        int multiplication = first * second;
+        int division = first / second;
+        int module =first % second;
+        System.out.println("Rezultatul adunari este :  " + adittion);
+        System.out.println("Rezultatul scaderi este :  " + subtraction);
+        System.out.println("Rezultatul inmultiri este:  " + multiplication);
+        System.out.println("Rezultatul  impartiri este : " + division);
+        System.out.println("Restul impartiri este : " + module);
     }
 
     //Exercitiul 6

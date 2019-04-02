@@ -2,23 +2,15 @@ package animalrescue;
 
 import animalrescue.Animal;
 
-public class Dog extends Animal {
+abstract   class Dog extends Animal {
 
 
 
-    public void alearga(){
-        System.out.println("Catelul alearga. Pazea");
+    abstract void bark();
 
-    }
+   abstract void playWith() ;
 
-    public void latra(){
-        System.out.println("Ham!");
-    }
-    public void daDinCoada(){
-        System.out.println("Cainele da din coada");
-    }
+    abstract void sniff();
 
-    public void adulmeca(){
-        System.out.println("Cainele adulmeca mirosul");
-    }
+
 }

@@ -1,6 +1,6 @@
 package animalrescue;
 
-public class Human {
+public abstract class Human {
     private  int varsta;
     private double inaltime;
     private String culoareOchi;
@@ -60,16 +60,10 @@ public class Human {
 
 
 
-    public void doarme(){
-        System.out.println("Momentat dorm");
+    abstract void sleep();
 
-    }
-    public void alearga(){
-        System.out.println("Alerg");
-    }
-    public void sta(){
-        System.out.println("stau ");
-    }
+   abstract void run();
+    abstract void sit();
 
 
 

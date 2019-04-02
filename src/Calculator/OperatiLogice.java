@@ -1,6 +1,9 @@
 package Calculator;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
@@ -522,6 +525,164 @@ public void printLinesArray(){
             System.out.println(" Minimum value for the above array = " + min);
 
         }
+
+
+
+    public  void addElementToList(List<Integer> list, int number){
+
+        list.add(number);
+        System.out.println(list);
+    }
+
+
+
+    public  void printList(List<Integer> list){
+
+        for (int i = 0;i < list.size();i++){
+            System.out.println(list.get(i));
+        }
+    }
+    public  void printListStartFromNumber(List<Integer> list, int numberStart){
+        for (int i = list.indexOf(numberStart);i < list.size();i++){
+            System.out.println(list.get(i));
+        }
+    }
+
+    public static void printReverseList(List<Integer> list)
+    {
+
+        for (int i = list.size()-1 ; i >= 0;i--)
+
+
+        {
+
+            System.out.println(list.get(i));
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+    public  void addElementSpecificPositionList(List<String> list, int position, String word){
+
+        for(int i = 0;i < list.size();i++){
+
+            if (i ==position){
+                list.add(position,word);
+            }
+
+            System.out.println(list.get(i));
+        }
+
+
+
+
+    }
+
+    public  void addIntFirstPositionList(List<Integer> list, int number){
+
+        list.add(0,number);
+        System.out.println(list);
+
+
+
+    }
+
+    public void showPositionAndValueList(List<Integer> list){
+
+        for (int i = 0; i < list.size();i++){
+
+            System.out.println("Valoarea este " + list.get(i) + " Pozitia este " + i );
+
+
+        }
+
+
+
+    }
+
+
+    public  void changePositionList(List<Integer> list, int firstIndex, int secondIndex ){
+
+        System.out.println("Before the swap " + list );
+
+        Collections.swap(list,0,2);
+
+        System.out.println("After Swap: " + list);
+
+    }
+
+
+
+
+
+    public void  findGratestNumberInAList(List<Integer> mylist){
+        int max = 0;
+        for (int i = 0;i < mylist.size();i++){
+            for (int j = 1;j< mylist.size();j++){
+
+                if(mylist.get(i) < mylist.get(j)){
+                    max = mylist.get(j);
+                }
+            }
+
+            System.out.println(max);
+
+        }
+
+
+
+
+    }
+
+
+
+
+    public void findEvenNumbers(List<Integer>  listToSort ){
+        List<Integer> evenNumbers = new ArrayList<>();
+
+        for(int i = 0; i < listToSort.size();i++){
+            if(listToSort.get(i) % 2==0){
+                evenNumbers.add(listToSort.get(i));
+            }
+        }
+
+        System.out.println(evenNumbers);
+
+
+    }
+
+
+    public  void sortList(List<Integer> listToSort){
+        System.out.println("List before sorting: " + listToSort);
+
+        for (int i = 0; i < listToSort.size(); i++) {
+            for (int j = 0; j < listToSort.size() - i - 1; j++) {
+                if (listToSort.get(j) > listToSort.get(j + 1)) {
+                    int temp = listToSort.get(j);
+                    listToSort.set(j, listToSort.get(j + 1));
+                    listToSort.set(j + 1, temp);
+                }
+            }
+        }
+
+        System.out.println("List After sorting: " + listToSort);
+
+
+    }
+
+
+
+
+
+
 
 
 
