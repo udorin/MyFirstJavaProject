@@ -8,4 +8,18 @@ public class cow extends Animal {
     }
 
 
+    @Override
+    void eat() {
+
+    }
+
+    @Override
+    void sleep() {
+
+    }
+
+    @Override
+    void waking() {
+
+    }
 }

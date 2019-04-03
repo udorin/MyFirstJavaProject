@@ -613,7 +613,20 @@ public void printLinesArray(){
 
         System.out.println("Before the swap " + list );
 
-        Collections.swap(list,0,2);
+        for(int i = 0;i < list.size();i++){
+
+
+            if(i == firstIndex){
+                int temp = list.get(firstIndex);
+                int tem1 = list.get(secondIndex);
+                list.set(firstIndex,tem1);
+                list.set(secondIndex,temp);
+
+
+            }
+
+
+        }
 
         System.out.println("After Swap: " + list);
 
@@ -645,7 +658,7 @@ public void printLinesArray(){
 
 
 
-    public void findEvenNumbers(List<Integer>  listToSort ){
+    public List<Integer> findEvenNumbers(List<Integer>  listToSort ){
         List<Integer> evenNumbers = new ArrayList<>();
 
         for(int i = 0; i < listToSort.size();i++){
@@ -654,9 +667,9 @@ public void printLinesArray(){
             }
         }
 
-        System.out.println(evenNumbers);
 
 
+        return evenNumbers;
     }
 
 

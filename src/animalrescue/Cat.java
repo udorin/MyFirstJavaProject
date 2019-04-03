@@ -14,8 +14,18 @@ public class Cat extends Animal {
     }
 
 
+    @Override
+    void eat() {
 
+    }
 
+    @Override
+    void sleep() {
 
+    }
 
+    @Override
+    void waking() {
+
+    }
 }
