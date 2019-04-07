@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Calculator {
 
-             public int subtraction(int firstNumber, int secondNumber) {
+             public int  subtraction(int firstNumber, int secondNumber) {
+                 System.out.println("The result of subtraction is :");
 
-        return firstNumber - secondNumber;
+       return firstNumber - secondNumber;
     }
     //polymorph
     public int subtraction(int firstNumber, int secondNumber,  int thirdNumber) {
@@ -52,7 +53,7 @@ public class Calculator {
 
 
 
-        System.out.println("rezultatul adunari este: ");
+        System.out.println("The result of Addition is :  ");
         return first + second  ;
 
 
